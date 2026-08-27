@@ -1,5 +1,8 @@
 
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // إعدادات الجلسة: الحفاظ على تسجيل الدخول لمدة 30 يوم (حتى بعد إغلاق المتصفح)
 $lifetime = 30 * 24 * 60 * 60; 
 ini_set('session.cookie_lifetime', $lifetime);
