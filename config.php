@@ -1,3 +1,4 @@
+
 <?php
 // إعدادات الجلسة: الحفاظ على تسجيل الدخول لمدة 30 يوم (حتى بعد إغلاق المتصفح)
 $lifetime = 30 * 24 * 60 * 60; 
@@ -7,12 +8,15 @@ session_set_cookie_params($lifetime);
 
 session_start();
 
-$host = "sql302.infinityfree.com";
-$user = "if0_42749265";
-$pass = "z5DYVK2oLM8r";
-$db   = "if0_42749265_saadi_charity";
+// قراءة بيانات الاتصال من بيئة Railway أو استخدام القيم المحلية كبديل
+$host = $_ENV['MYSQLHOST'] ?? 'localhost';
+$user = $_ENV['MYSQLUSER'] ?? 'root';
+$pass = $_ENV['MYSQLPASSWORD'] ?? '';
+$db   = $_ENV['MYSQLDATABASE'] ?? 'if0_42749265_saadi_charity';
+$port = $_ENV['MYSQLPORT'] ?? '3306';
 
-$conn = new mysqli($host, $user, $pass, $db);
+// إنشاء الاتصال مع تحديد المنفذ (Port) إن وجد
+$conn = new mysqli($host, $user, $pass, $db, $port);
 
 if ($conn->connect_error) {
     die("فشل الاتصال بقاعدة البيانات: " . $conn->connect_error);
