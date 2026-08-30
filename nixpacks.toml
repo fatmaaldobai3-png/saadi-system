@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83", "php83Extensions.mysqli"]
+nixPkgs = ["php84Packages.mysqli"]
 
 [phases.build]
 cmds = []
