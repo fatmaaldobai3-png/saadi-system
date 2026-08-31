@@ -41,7 +41,7 @@ function envValue($key, $default = '')
 $host = envValue('MYSQLHOST', 'localhost');
 $user = envValue('MYSQLUSER', 'root');
 $pass = envValue('MYSQLPASSWORD', '');
-$db   = envValue('MYSQLDATABASE', 'if0_42749265_saadi_charity');
+$db   = envValue('MYSQLDATABASE', 'railway');
 $port = envValue('MYSQLPORT', '3306');
 
 
