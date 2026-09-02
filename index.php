@@ -1,7 +1,7 @@
 <?php include 'config.php'; ?>
 
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
 
@@ -10,11 +10,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>جمعية السعدي الخيرية التنموية - عدن</title>
+    <title>Saadi Charity Development Association - Aden</title>
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- إصلاح قائمة الجوال -->
+    <!-- Mobile Navigation Fix -->
     <style>
 
         /* =========================================
@@ -29,15 +29,14 @@
             display: none;
         }
 
-
         @media (max-width: 768px) {
 
-            /* إخفاء القائمة العادية */
+            /* Hide normal navigation */
             .navbar .nav-links {
                 display: none !important;
             }
 
-            /* زر القائمة */
+            /* Mobile menu button */
             .mobile-menu-label {
                 display: flex !important;
 
@@ -68,12 +67,10 @@
                 -webkit-tap-highlight-color: transparent;
             }
 
-
-            /* القائمة عند فتحها */
+            /* Show navigation when menu is checked */
             .mobile-menu-toggle:checked ~ .nav-links {
                 display: flex !important;
             }
-
 
             .navbar {
                 position: sticky;
@@ -85,16 +82,15 @@
                 min-height: 75px;
             }
 
-
-            /* شكل القائمة */
+            /* Mobile navigation menu */
             .navbar .nav-links {
                 position: absolute;
 
                 top: 75px;
 
-                right: 0;
-
                 left: 0;
+
+                right: 0;
 
                 width: 100%;
 
@@ -119,7 +115,6 @@
                 z-index: 9999;
             }
 
-
             .navbar .nav-links li {
                 width: 100%;
 
@@ -129,7 +124,6 @@
 
                 list-style: none;
             }
-
 
             .navbar .nav-links li a {
                 display: block;
@@ -147,19 +141,16 @@
                 text-decoration: none;
             }
 
-
             .navbar .nav-links .btn-nav {
                 margin: 5px 0;
             }
 
-
-            /* قائمة العضو في الجوال */
+            /* Member menu on mobile */
             .member-menu {
                 width: 100%;
 
                 position: relative;
             }
-
 
             .member-dropdown {
                 position: static !important;
@@ -183,17 +174,14 @@
                 padding: 5px 0 !important;
             }
 
-
             .member-dropdown a {
                 padding: 11px 15px !important;
             }
 
-
-            /* الشعار */
+            /* Logo */
             .logo {
                 font-size: 19px;
             }
-
 
             .logo-img {
                 max-width: 45px;
@@ -201,32 +189,27 @@
                 max-height: 45px;
             }
 
-
             /* Hero */
             .hero h1 {
                 font-size: 32px;
             }
 
-
-            /* الإحصائيات */
+            /* Statistics */
             .stats-bar {
                 grid-template-columns: 1fr;
 
                 margin: -20px 20px 0;
             }
 
-
-            /* النماذج */
+            /* Forms */
             .form-grid {
                 grid-template-columns: 1fr;
             }
-
 
             /* Footer */
             .footer-grid {
                 grid-template-columns: 1fr;
             }
-
 
             /* Sections */
             .section {
@@ -239,7 +222,6 @@
 
 </head>
 
-
 <body>
 
 
@@ -249,26 +231,21 @@
 
 <nav class="navbar">
 
-
-    <!-- الشعار -->
+    <!-- Logo -->
 
     <a href="index.php" class="logo">
 
         <img
             src="images/logo.jpg"
-            alt="شعار جمعية السعدي"
+            alt="Saadi Charity Association Logo"
             class="logo-img">
 
-        <span>جمعية السعدي</span>
+        <span>Saadi Charity Association</span>
 
     </a>
 
 
-
-    <!--
-        هذا checkbox هو المسؤول عن فتح وإغلاق القائمة.
-        لا يحتاج JavaScript.
-    -->
+    <!-- Mobile menu checkbox -->
 
     <input
         type="checkbox"
@@ -276,33 +253,28 @@
         class="mobile-menu-toggle">
 
 
-
-    <!-- زر ☰ -->
+    <!-- Mobile menu button -->
 
     <label
         for="mobile-menu-toggle"
         class="mobile-menu-label"
-        aria-label="فتح القائمة">
+        aria-label="Open menu">
 
         ☰
 
     </label>
 
 
-
-    <!-- =================================================
-         NAV LINKS
-    ================================================== -->
+    <!-- Navigation Links -->
 
     <ul class="nav-links">
-
 
         <li>
 
             <a href="index.php"
                class="active">
 
-                الرئيسية
+                Home
 
             </a>
 
@@ -313,7 +285,7 @@
 
             <a href="about.php">
 
-                عن الجمعية
+                About Us
 
             </a>
 
@@ -324,7 +296,7 @@
 
             <a href="activities.php">
 
-                أنشطتنا
+                Our Activities
 
             </a>
 
@@ -335,19 +307,16 @@
 
             <a href="register.php">
 
-                تسجيل عضوية
+                Membership
 
             </a>
 
         </li>
 
 
-
         <?php if (isMemberLoggedIn()): ?>
 
-
             <li class="member-menu">
-
 
                 <a
                     href="#"
@@ -369,15 +338,13 @@
                 </a>
 
 
-
                 <ul class="member-dropdown">
-
 
                     <li>
 
                         <a href="member_dashboard.php">
 
-                            📋 حسابي
+                            📋 My Account
 
                         </a>
 
@@ -388,7 +355,7 @@
 
                         <a href="member_subscriptions.php">
 
-                            📅 اشتراكاتي
+                            📅 My Subscriptions
 
                         </a>
 
@@ -399,7 +366,7 @@
 
                         <a href="member_payments.php">
 
-                            💳 مدفوعاتي
+                            💳 My Payments
 
                         </a>
 
@@ -419,21 +386,18 @@
                                 font-weight:700;
                             ">
 
-                            🚪 تسجيل الخروج
+                            🚪 Logout
 
                         </a>
 
                     </li>
 
-
                 </ul>
-
 
             </li>
 
 
         <?php else: ?>
-
 
             <li>
 
@@ -441,21 +405,17 @@
                     href="login.php"
                     class="btn-nav">
 
-                    تسجيل الدخول
+                    Login
 
                 </a>
 
             </li>
 
-
         <?php endif; ?>
-
 
     </ul>
 
-
 </nav>
-
 
 
 <!-- =====================================================
@@ -468,11 +428,9 @@
         position: relative;
     }
 
-
     .member-menu:hover .member-dropdown {
         display: block !important;
     }
-
 
     .member-dropdown {
         position: absolute;
@@ -502,7 +460,6 @@
         border: 1px solid #eee;
     }
 
-
     .member-dropdown a:hover {
 
         background: var(--accent);
@@ -511,27 +468,23 @@
 
     }
 
-
 </style>
 
 
-
 <!-- =====================================================
-     HERO
+     HERO SECTION
 ===================================================== -->
 
 <section class="hero">
 
-
     <div class="hero-content">
-
 
         <h1>
 
-            معاً نبني
+            Together We Build
 
             <span>
-                مجتمعاً متكافلاً
+                A Caring Community
             </span>
 
         </h1>
@@ -539,25 +492,24 @@
 
         <p>
 
-            جمعية السعدي الخيرية التنموية - عدن
+            Saadi Charity Development Association - Aden
 
             <br>
 
-            نسعى لتقديم المساعدات الإنسانية وتنفيذ البرامج
-            والمشاريع التنموية للأسر المحتاجة والأيتام
-            والنساء والشباب
+            We strive to provide humanitarian assistance
+            and implement development programs and projects
+            for families in need, orphans, women, and youth.
 
         </p>
 
 
         <div class="hero-btns">
 
-
             <a
                 href="register.php"
                 class="btn btn-primary">
 
-                📝 سجل عضويتك الآن
+                📝 Register Now
 
             </a>
 
@@ -566,34 +518,29 @@
                 href="about.php"
                 class="btn btn-outline">
 
-                تعرف علينا أكثر
+                Learn More About Us
 
             </a>
 
-
         </div>
 
-
     </div>
-
 
 </section>
 
 
-
 <!-- =====================================================
-     STATS
+     STATISTICS
 ===================================================== -->
 
 <div class="stats-bar">
-
 
     <div class="stat-item">
 
         <h3>+500</h3>
 
         <p>
-            أسرة مستفيدة
+            Beneficiary Families
         </p>
 
     </div>
@@ -604,7 +551,7 @@
         <h3>+200</h3>
 
         <p>
-            يتيم مكفول
+            Sponsored Orphans
         </p>
 
     </div>
@@ -615,7 +562,7 @@
         <h3>+50</h3>
 
         <p>
-            مشروع منفذ
+            Completed Projects
         </p>
 
     </div>
@@ -626,14 +573,12 @@
         <h3>+1000</h3>
 
         <p>
-            متطوع
+            Volunteers
         </p>
 
     </div>
 
-
 </div>
-
 
 
 <!-- =====================================================
@@ -641,7 +586,6 @@
 ===================================================== -->
 
 <section class="section">
-
 
     <div
         style="
@@ -670,7 +614,6 @@
                 text-align:center;
             ">
 
-
             <div
                 style="
                     font-size:50px;
@@ -688,7 +631,7 @@
                     margin-bottom:15px;
                 ">
 
-                رؤيتنا
+                Our Vision
 
             </h2>
 
@@ -700,17 +643,15 @@
                     opacity:.95;
                 ">
 
-                مجتمع متكافل ومتعاون،
-                تتحسن فيه الظروف المعيشية
-                للأسر المحتاجة، وتتوفر فيه
-                فرص التعليم والصحة والتنمية
-                والتمكين الاقتصادي.
+                A caring and cooperative community
+                where the living conditions of families
+                in need are improved, with access to
+                education, healthcare, development
+                opportunities, and economic empowerment.
 
             </p>
 
-
         </div>
-
 
 
         <!-- Mission -->
@@ -724,7 +665,6 @@
                 text-align:center;
                 border-top:4px solid var(--secondary);
             ">
-
 
             <div
                 style="
@@ -744,7 +684,7 @@
                     color:var(--primary);
                 ">
 
-                رسالتنا
+                Our Mission
 
             </h2>
 
@@ -756,24 +696,21 @@
                     color:var(--text-light);
                 ">
 
-                تقديم المساعدات الإنسانية
-                وتنفيذ البرامج والمشاريع التنموية
-                التي تستهدف الأسر المحتاجة
-                والأيتام والنساء والشباب،
-                وتعزيز التكافل والشراكة المجتمعية
-                بصورة مستدامة وشفافة.
+                To provide humanitarian assistance
+                and implement sustainable development
+                programs and projects targeting families
+                in need, orphans, women, and youth,
+                while strengthening community solidarity
+                and partnerships through transparency
+                and sustainability.
 
             </p>
 
-
         </div>
-
 
     </div>
 
-
 </section>
-
 
 
 <!-- =====================================================
@@ -789,22 +726,21 @@
         padding:80px 5%;
     ">
 
-
     <div class="section-header">
 
         <h2>
-            أهدافنا
+            Our Goals
         </h2>
 
         <p>
-            نسعى لتحقيق رسالة سامية تخدم المجتمع
-            وتنمية الموارد البشرية والمادية
+            We strive to achieve a meaningful mission
+            that serves the community and develops
+            human and material resources.
         </p>
 
         <div class="line"></div>
 
     </div>
-
 
 
     <div class="goals-grid">
@@ -817,16 +753,16 @@
             </div>
 
             <h3>
-                رعاية الأسر الفقيرة
+                Supporting Poor Families
             </h3>
 
             <p>
-                رعاية الأسر الفقيرة والمحتاجة
-                وتقديم المساعدات لها
+                Supporting families in need
+                and providing them with
+                essential assistance.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -836,16 +772,15 @@
             </div>
 
             <h3>
-                كفالة الأيتام
+                Orphan Sponsorship
             </h3>
 
             <p>
-                كفالة ورعاية الأيتام والأرامل
-                والفئات الأشد احتياجًا
+                Sponsoring and caring for orphans,
+                widows, and the most vulnerable groups.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -855,16 +790,16 @@
             </div>
 
             <h3>
-                دعم التعليم
+                Education Support
             </h3>
 
             <p>
-                دعم الطلاب المحتاجين وتشجيع
-                التعليم والتأهيل
+                Supporting students in need
+                and encouraging education
+                and professional development.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -874,16 +809,15 @@
             </div>
 
             <h3>
-                الرعاية الصحية
+                Healthcare
             </h3>
 
             <p>
-                المساهمة في توفير الرعاية
-                الصحية والعلاج للمحتاجين
+                Contributing to healthcare services
+                and medical treatment for people in need.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -893,16 +827,16 @@
             </div>
 
             <h3>
-                التمكين الاقتصادي
+                Economic Empowerment
             </h3>
 
             <p>
-                تمكين الأسر اقتصاديًا من خلال
-                المشاريع الصغيرة والأسر المنتجة
+                Empowering families economically
+                through small businesses and
+                productive family projects.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -912,16 +846,15 @@
             </div>
 
             <h3>
-                التدريب والتأهيل
+                Training & Development
             </h3>
 
             <p>
-                تدريب وتأهيل الشباب والنساء
-                وإكسابهم مهارات مهنية
+                Training and preparing youth
+                and women with professional skills.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -931,16 +864,16 @@
             </div>
 
             <h3>
-                مشاريع المياه
+                Water Projects
             </h3>
 
             <p>
-                تنفيذ مشاريع المياه والإصحاح
-                البيئي والخدمات المجتمعية
+                Implementing water, sanitation,
+                environmental, and community
+                service projects.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -950,16 +883,15 @@
             </div>
 
             <h3>
-                الإغاثة العاجلة
+                Emergency Relief
             </h3>
 
             <p>
-                المساهمة في مواجهة الكوارث
-                والأزمات وتقديم الإغاثة العاجلة
+                Responding to disasters and crises
+                and providing emergency assistance.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -969,16 +901,15 @@
             </div>
 
             <h3>
-                التطوع والتكافل
+                Volunteering & Solidarity
             </h3>
 
             <p>
-                تشجيع المبادرات التطوعية
-                وروح التكافل والتعاون
+                Encouraging volunteer initiatives
+                and promoting solidarity and cooperation.
             </p>
 
         </div>
-
 
 
         <div class="goal-card">
@@ -988,12 +919,12 @@
             </div>
 
             <h3>
-                الشراكات
+                Partnerships
             </h3>
 
             <p>
-                إقامة شراكات مع المؤسسات
-                الحكومية والأهلية والقطاع الخاص
+                Building partnerships with government
+                institutions, NGOs, and the private sector.
             </p>
 
         </div>
@@ -1001,9 +932,7 @@
 
     </div>
 
-
 </section>
-
 
 
 <!-- =====================================================
@@ -1012,21 +941,20 @@
 
 <section class="section">
 
-
     <div class="section-header">
 
         <h2>
-            أنشطتنا ومشاريعنا
+            Our Activities & Projects
         </h2>
 
         <p>
-            برامج ومشاريع نوعية تلامس احتياجات المجتمع
+            Quality programs and projects that address
+            the real needs of our community.
         </p>
 
         <div class="line"></div>
 
     </div>
-
 
 
     <div class="activities-grid">
@@ -1052,18 +980,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع كفالة الأيتام
+                    Orphan Sponsorship Project
                 </h3>
 
                 <p>
-                    كفالة الأيتام وتوفير احتياجاتهم
-                    الأساسية من غذاء وكساء وتعليم
+                    Sponsoring orphans and providing
+                    their basic needs including food,
+                    clothing, and education.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1086,18 +1014,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع رعاية الأسر الأشد احتياجًا
+                    Support for Families in Need
                 </h3>
 
                 <p>
-                    دعم الأسر الفقيرة وتقديم
-                    المساعدات المالية والعينية لهم
+                    Supporting poor families and
+                    providing financial and
+                    in-kind assistance.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1120,18 +1048,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع السلال الغذائية
+                    Food Basket Project
                 </h3>
 
                 <p>
-                    توزيع السلال الغذائية والمساعدات
-                    الموسمية للأسر المحتاجة
+                    Distributing food baskets and
+                    seasonal assistance to families
+                    in need.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1154,18 +1082,17 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع كسوة العيد
+                    Eid Clothing Project
                 </h3>
 
                 <p>
-                    توفير الملابس الجديدة للأيتام
-                    والأسر الفقيرة في المناسبات
+                    Providing new clothing for orphans
+                    and poor families during special occasions.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1188,18 +1115,17 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع الحقيبة والزي المدرسي
+                    School Bag & Uniform Project
                 </h3>
 
                 <p>
-                    توفير الأدوات المدرسية والزي
-                    للطلاب المحتاجين
+                    Providing school supplies and
+                    uniforms for students in need.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1222,18 +1148,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع المنح التعليمية
+                    Educational Scholarships
                 </h3>
 
                 <p>
-                    دعم الطلاب الجامعيين
-                    والمتفوقين بالمنح الدراسية
+                    Supporting university students
+                    and outstanding students through
+                    educational scholarships.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1256,18 +1182,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع العلاج والعمليات
+                    Medical Treatment & Surgery
                 </h3>
 
                 <p>
-                    توفير العلاج والعمليات الجراحية
-                    للمرضى المحتاجين
+                    Providing medical treatment and
+                    surgical operations for patients
+                    in need.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1290,18 +1216,18 @@
             <div class="activity-content">
 
                 <h3>
-                    مشروع الأسر المنتجة
+                    Productive Families Project
                 </h3>
 
                 <p>
-                    دعم الأسر بمشاريع صغيرة
-                    تدر دخلاً مستداماً
+                    Supporting families with small
+                    businesses that generate
+                    sustainable income.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1324,18 +1250,18 @@
             <div class="activity-content">
 
                 <h3>
-                    برامج التدريب المهني
+                    Vocational Training Programs
                 </h3>
 
                 <p>
-                    تأهيل الشباب والنساء
-                    وإكسابهم مهارات مهنية للعمل
+                    Preparing youth and women
+                    with professional skills
+                    for employment.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1358,18 +1284,17 @@
             <div class="activity-content">
 
                 <h3>
-                    مشاريع المياه
+                    Water Projects
                 </h3>
 
                 <p>
-                    حفر الآبار وإنشاء خزانات
-                    المياه للمجتمعات المحتاجة
+                    Building wells and water tanks
+                    for communities in need.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1392,17 +1317,17 @@
             <div class="activity-content">
 
                 <h3>
-                    ترميم المساكن
+                    Housing Rehabilitation
                 </h3>
 
                 <p>
-                    ترميم وتحسين مساكن الأسر المحتاجة
+                    Renovating and improving homes
+                    for families in need.
                 </p>
 
             </div>
 
         </div>
-
 
 
         <div class="activity-card">
@@ -1425,12 +1350,12 @@
             <div class="activity-content">
 
                 <h3>
-                    حملات الإغاثة
+                    Emergency Relief Campaigns
                 </h3>
 
                 <p>
-                    الاستجابة السريعة للكوارث
-                    وتقديم الإغاثة العاجلة
+                    Rapid response to disasters
+                    and providing emergency relief.
                 </p>
 
             </div>
@@ -1440,31 +1365,28 @@
 
     </div>
 
-
 </section>
 
 
-
 <!-- =====================================================
-     CTA
+     CALL TO ACTION
 ===================================================== -->
 
 <section class="cta-section">
 
-
     <h2>
-        كن عضواً فاعلاً في جمعيتنا
+        Become an Active Member of Our Association
     </h2>
 
 
     <p>
 
-        اشتراكك الشهري يصنع فرقاً حقيقياً
-        في حياة الأسر المحتاجة
+        Your monthly contribution can make
+        a real difference in the lives of families in need.
 
         <br>
 
-        ساهم معنا في بناء مجتمع متكافل
+        Join us in building a caring and supportive community.
 
     </p>
 
@@ -1477,13 +1399,11 @@
             padding:16px 40px;
         ">
 
-        سجل الآن وكن جزءاً من التغيير
+        Register Now & Be Part of the Change
 
     </a>
 
-
 </section>
-
 
 
 <!-- =====================================================
