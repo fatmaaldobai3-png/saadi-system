@@ -1411,7 +1411,26 @@
 ===================================================== -->
 
 <?php include 'footer.php'; ?>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const menu = document.querySelector('.navbar .nav-links');
+
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('change', function () {
+
+        if (this.checked) {
+            menu.style.display = 'flex';
+        } else {
+            menu.style.display = 'none';
+        }
+
+    });
+
+});
+</script>
 
 </body>
 
