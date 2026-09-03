@@ -236,7 +236,7 @@
     <a href="index.php" class="logo">
 
         <img
-            src="images/logo.jpg"
+            src="logo.jpg"
             alt="Saadi Charity Association Logo"
             class="logo-img">
 
