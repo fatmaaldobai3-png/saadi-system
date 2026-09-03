@@ -1,7 +1,7 @@
 <?php include 'config.php'; ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="ltr">
 
 <head>
 
