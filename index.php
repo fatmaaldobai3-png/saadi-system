@@ -1,7 +1,7 @@
 <?php include 'config.php'; ?>
 
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
 
 <head>
 
@@ -10,7 +10,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Saadi Charity Development Association - Aden</title>
+    <title>جمعية سعدي للتنمية الخيرية - عدن</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -237,10 +237,10 @@
 
         <img
             src="logo.jpg"
-            alt="Saadi Charity Association Logo"
+            alt="شعار جمعية سعدي الخيرية"
             class="logo-img">
 
-        <span>Saadi Charity Association</span>
+        <span>جمعية سعدي للتنمية الخيرية</span>
 
     </a>
 
@@ -258,7 +258,7 @@
     <label
         for="mobile-menu-toggle"
         class="mobile-menu-label"
-        aria-label="Open menu">
+        aria-label="فتح القائمة">
 
         ☰
 
@@ -274,7 +274,7 @@
             <a href="index.php"
                class="active">
 
-                Home
+                الرئيسية
 
             </a>
 
@@ -285,7 +285,7 @@
 
             <a href="about.php">
 
-                About Us
+                من نحن
 
             </a>
 
@@ -296,7 +296,7 @@
 
             <a href="activities.php">
 
-                Our Activities
+                أنشطتنا
 
             </a>
 
@@ -307,7 +307,7 @@
 
             <a href="register.php">
 
-                Membership
+                العضوية
 
             </a>
 
@@ -344,7 +344,7 @@
 
                         <a href="member_dashboard.php">
 
-                            📋 My Account
+                            📋 حسابي
 
                         </a>
 
@@ -355,7 +355,7 @@
 
                         <a href="member_subscriptions.php">
 
-                            📅 My Subscriptions
+                            📅 اشتراكاتي
 
                         </a>
 
@@ -366,7 +366,7 @@
 
                         <a href="member_payments.php">
 
-                            💳 My Payments
+                            💳 مدفوعاتي
 
                         </a>
 
@@ -386,7 +386,7 @@
                                 font-weight:700;
                             ">
 
-                            🚪 Logout
+                            🚪 تسجيل الخروج
 
                         </a>
 
@@ -405,7 +405,7 @@
                     href="login.php"
                     class="btn-nav">
 
-                    Login
+                    تسجيل الدخول
 
                 </a>
 
@@ -437,7 +437,7 @@
 
         top: calc(100% + 8px);
 
-        left: 0;
+        right: 0;
 
         background: white;
 
@@ -481,10 +481,10 @@
 
         <h1>
 
-            Together We Build
+            معًا نبني
 
             <span>
-                A Caring Community
+                مجتمعًا متكافلًا
             </span>
 
         </h1>
@@ -492,13 +492,13 @@
 
         <p>
 
-            Saadi Charity Development Association - Aden
+            جمعية سعدي للتنمية الخيرية - عدن
 
             <br>
 
-            We strive to provide humanitarian assistance
-            and implement development programs and projects
-            for families in need, orphans, women, and youth.
+            نسعى إلى تقديم المساعدات الإنسانية وتنفيذ
+            البرامج والمشاريع التنموية للأسر المحتاجة
+            والأيتام والنساء والشباب.
 
         </p>
 
@@ -509,7 +509,7 @@
                 href="register.php"
                 class="btn btn-primary">
 
-                📝 Register Now
+                📝 سجل الآن
 
             </a>
 
@@ -518,7 +518,7 @@
                 href="about.php"
                 class="btn btn-outline">
 
-                Learn More About Us
+                تعرف علينا أكثر
 
             </a>
 
@@ -540,7 +540,7 @@
         <h3>+500</h3>
 
         <p>
-            Beneficiary Families
+            أسرة مستفيدة
         </p>
 
     </div>
@@ -551,7 +551,7 @@
         <h3>+200</h3>
 
         <p>
-            Sponsored Orphans
+            يتيم مكفول
         </p>
 
     </div>
@@ -562,7 +562,7 @@
         <h3>+50</h3>
 
         <p>
-            Completed Projects
+            مشروعًا منجزًا
         </p>
 
     </div>
@@ -573,7 +573,7 @@
         <h3>+1000</h3>
 
         <p>
-            Volunteers
+            متطوع
         </p>
 
     </div>
@@ -631,7 +631,7 @@
                     margin-bottom:15px;
                 ">
 
-                Our Vision
+                رؤيتنا
 
             </h2>
 
@@ -643,11 +643,10 @@
                     opacity:.95;
                 ">
 
-                A caring and cooperative community
-                where the living conditions of families
-                in need are improved, with access to
-                education, healthcare, development
-                opportunities, and economic empowerment.
+                مجتمع متكافل ومتعاون تتحسن فيه الظروف
+                المعيشية للأسر المحتاجة، ويحصل أفراده
+                على فرص التعليم والرعاية الصحية والتنمية
+                والتمكين الاقتصادي.
 
             </p>
 
@@ -684,7 +683,7 @@
                     color:var(--primary);
                 ">
 
-                Our Mission
+                رسالتنا
 
             </h2>
 
@@ -696,13 +695,11 @@
                     color:var(--text-light);
                 ">
 
-                To provide humanitarian assistance
-                and implement sustainable development
-                programs and projects targeting families
-                in need, orphans, women, and youth,
-                while strengthening community solidarity
-                and partnerships through transparency
-                and sustainability.
+                تقديم المساعدات الإنسانية وتنفيذ البرامج
+                والمشاريع التنموية المستدامة التي تستهدف
+                الأسر المحتاجة والأيتام والنساء والشباب،
+                مع تعزيز التكافل المجتمعي والشراكات
+                من خلال الشفافية والاستدامة.
 
             </p>
 
@@ -729,13 +726,12 @@
     <div class="section-header">
 
         <h2>
-            Our Goals
+            أهدافنا
         </h2>
 
         <p>
-            We strive to achieve a meaningful mission
-            that serves the community and develops
-            human and material resources.
+            نسعى لتحقيق رسالة هادفة تخدم المجتمع
+            وتنمي موارده البشرية والمادية.
         </p>
 
         <div class="line"></div>
@@ -753,13 +749,12 @@
             </div>
 
             <h3>
-                Supporting Poor Families
+                دعم الأسر الفقيرة
             </h3>
 
             <p>
-                Supporting families in need
-                and providing them with
-                essential assistance.
+                دعم الأسر المحتاجة وتوفير
+                المساعدات الأساسية لها.
             </p>
 
         </div>
@@ -772,12 +767,12 @@
             </div>
 
             <h3>
-                Orphan Sponsorship
+                كفالة الأيتام
             </h3>
 
             <p>
-                Sponsoring and caring for orphans,
-                widows, and the most vulnerable groups.
+                كفالة ورعاية الأيتام والأرامل
+                والفئات الأكثر احتياجًا.
             </p>
 
         </div>
@@ -790,13 +785,12 @@
             </div>
 
             <h3>
-                Education Support
+                دعم التعليم
             </h3>
 
             <p>
-                Supporting students in need
-                and encouraging education
-                and professional development.
+                دعم الطلاب المحتاجين وتشجيع
+                التعليم والتطوير المهني.
             </p>
 
         </div>
@@ -809,12 +803,12 @@
             </div>
 
             <h3>
-                Healthcare
+                الرعاية الصحية
             </h3>
 
             <p>
-                Contributing to healthcare services
-                and medical treatment for people in need.
+                المساهمة في تقديم الخدمات الصحية
+                والعلاج الطبي للمحتاجين.
             </p>
 
         </div>
@@ -827,13 +821,12 @@
             </div>
 
             <h3>
-                Economic Empowerment
+                التمكين الاقتصادي
             </h3>
 
             <p>
-                Empowering families economically
-                through small businesses and
-                productive family projects.
+                تمكين الأسر اقتصاديًا من خلال
+                المشاريع الصغيرة والمشاريع الإنتاجية.
             </p>
 
         </div>
@@ -846,12 +839,12 @@
             </div>
 
             <h3>
-                Training & Development
+                التدريب والتطوير
             </h3>
 
             <p>
-                Training and preparing youth
-                and women with professional skills.
+                تدريب وتأهيل الشباب والنساء
+                بالمهارات المهنية المختلفة.
             </p>
 
         </div>
@@ -864,13 +857,12 @@
             </div>
 
             <h3>
-                Water Projects
+                مشاريع المياه
             </h3>
 
             <p>
-                Implementing water, sanitation,
-                environmental, and community
-                service projects.
+                تنفيذ مشاريع المياه والصرف الصحي
+                والبيئة وخدمة المجتمع.
             </p>
 
         </div>
@@ -883,12 +875,12 @@
             </div>
 
             <h3>
-                Emergency Relief
+                الإغاثة الطارئة
             </h3>
 
             <p>
-                Responding to disasters and crises
-                and providing emergency assistance.
+                الاستجابة للكوارث والأزمات وتقديم
+                المساعدات والإغاثة الطارئة.
             </p>
 
         </div>
@@ -901,12 +893,12 @@
             </div>
 
             <h3>
-                Volunteering & Solidarity
+                التطوع والتكافل
             </h3>
 
             <p>
-                Encouraging volunteer initiatives
-                and promoting solidarity and cooperation.
+                تشجيع المبادرات التطوعية وتعزيز
+                التكافل والتعاون المجتمعي.
             </p>
 
         </div>
@@ -919,12 +911,12 @@
             </div>
 
             <h3>
-                Partnerships
+                الشراكات
             </h3>
 
             <p>
-                Building partnerships with government
-                institutions, NGOs, and the private sector.
+                بناء شراكات مع المؤسسات الحكومية
+                والمنظمات غير الحكومية والقطاع الخاص.
             </p>
 
         </div>
@@ -944,12 +936,12 @@
     <div class="section-header">
 
         <h2>
-            Our Activities & Projects
+            أنشطتنا ومشاريعنا
         </h2>
 
         <p>
-            Quality programs and projects that address
-            the real needs of our community.
+            برامج ومشاريع نوعية تلبي الاحتياجات
+            الحقيقية لمجتمعنا.
         </p>
 
         <div class="line"></div>
@@ -980,13 +972,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Orphan Sponsorship Project
+                    مشروع كفالة الأيتام
                 </h3>
 
                 <p>
-                    Sponsoring orphans and providing
-                    their basic needs including food,
-                    clothing, and education.
+                    كفالة الأيتام وتوفير احتياجاتهم
+                    الأساسية من الغذاء والملابس والتعليم.
                 </p>
 
             </div>
@@ -1014,13 +1005,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Support for Families in Need
+                    دعم الأسر المحتاجة
                 </h3>
 
                 <p>
-                    Supporting poor families and
-                    providing financial and
-                    in-kind assistance.
+                    دعم الأسر الفقيرة وتوفير المساعدات
+                    المالية والعينية لها.
                 </p>
 
             </div>
@@ -1048,13 +1038,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Food Basket Project
+                    مشروع السلة الغذائية
                 </h3>
 
                 <p>
-                    Distributing food baskets and
-                    seasonal assistance to families
-                    in need.
+                    توزيع السلال الغذائية والمساعدات
+                    الموسمية على الأسر المحتاجة.
                 </p>
 
             </div>
@@ -1082,12 +1071,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Eid Clothing Project
+                    مشروع كسوة العيد
                 </h3>
 
                 <p>
-                    Providing new clothing for orphans
-                    and poor families during special occasions.
+                    توفير الملابس الجديدة للأيتام
+                    والأسر الفقيرة في المناسبات.
                 </p>
 
             </div>
@@ -1115,12 +1104,12 @@
             <div class="activity-content">
 
                 <h3>
-                    School Bag & Uniform Project
+                    مشروع الحقيبة والزي المدرسي
                 </h3>
 
                 <p>
-                    Providing school supplies and
-                    uniforms for students in need.
+                    توفير المستلزمات والزي المدرسي
+                    للطلاب المحتاجين.
                 </p>
 
             </div>
@@ -1148,13 +1137,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Educational Scholarships
+                    المنح الدراسية
                 </h3>
 
                 <p>
-                    Supporting university students
-                    and outstanding students through
-                    educational scholarships.
+                    دعم طلاب الجامعات والطلاب المتفوقين
+                    من خلال المنح التعليمية.
                 </p>
 
             </div>
@@ -1182,13 +1170,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Medical Treatment & Surgery
+                    العلاج والعمليات الجراحية
                 </h3>
 
                 <p>
-                    Providing medical treatment and
-                    surgical operations for patients
-                    in need.
+                    توفير العلاج الطبي والعمليات الجراحية
+                    للمرضى المحتاجين.
                 </p>
 
             </div>
@@ -1216,13 +1203,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Productive Families Project
+                    مشروع الأسر المنتجة
                 </h3>
 
                 <p>
-                    Supporting families with small
-                    businesses that generate
-                    sustainable income.
+                    دعم الأسر بالمشاريع الصغيرة التي
+                    توفر مصدر دخل مستدام.
                 </p>
 
             </div>
@@ -1250,13 +1236,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Vocational Training Programs
+                    برامج التدريب المهني
                 </h3>
 
                 <p>
-                    Preparing youth and women
-                    with professional skills
-                    for employment.
+                    تأهيل الشباب والنساء بالمهارات
+                    المهنية اللازمة لسوق العمل.
                 </p>
 
             </div>
@@ -1284,12 +1269,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Water Projects
+                    مشاريع المياه
                 </h3>
 
                 <p>
-                    Building wells and water tanks
-                    for communities in need.
+                    بناء الآبار وخزانات المياه
+                    للمجتمعات المحتاجة.
                 </p>
 
             </div>
@@ -1317,12 +1302,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Housing Rehabilitation
+                    ترميم وتأهيل المساكن
                 </h3>
 
                 <p>
-                    Renovating and improving homes
-                    for families in need.
+                    ترميم وتحسين مساكن الأسر
+                    المحتاجة.
                 </p>
 
             </div>
@@ -1350,12 +1335,12 @@
             <div class="activity-content">
 
                 <h3>
-                    Emergency Relief Campaigns
+                    حملات الإغاثة الطارئة
                 </h3>
 
                 <p>
-                    Rapid response to disasters
-                    and providing emergency relief.
+                    الاستجابة السريعة للكوارث وتقديم
+                    المساعدات والإغاثة الطارئة.
                 </p>
 
             </div>
@@ -1375,18 +1360,18 @@
 <section class="cta-section">
 
     <h2>
-        Become an Active Member of Our Association
+        كن عضوًا فعالًا في جمعيتنا
     </h2>
 
 
     <p>
 
-        Your monthly contribution can make
-        a real difference in the lives of families in need.
+        مساهمتك الشهرية يمكن أن تحدث فرقًا حقيقيًا
+        في حياة الأسر المحتاجة.
 
         <br>
 
-        Join us in building a caring and supportive community.
+        انضم إلينا في بناء مجتمع متكافل وداعم.
 
     </p>
 
@@ -1399,7 +1384,7 @@
             padding:16px 40px;
         ">
 
-        Register Now & Be Part of the Change
+        سجل الآن وكن جزءًا من التغيير
 
     </a>
 
@@ -1411,6 +1396,7 @@
 ===================================================== -->
 
 <?php include 'footer.php'; ?>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
