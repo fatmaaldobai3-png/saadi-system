@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <a href="index.php" class="logo">
-            <img src="images/logo.jpg" alt="شعار جمعية السعدي" class="logo-img">
+            <img src="logo.jpg" alt="شعار جمعية السعدي" class="logo-img">
             <span>جمعية السعدي</span>
         </a>
         <ul class="nav-links">
