@@ -8,7 +8,7 @@ $site_address = getSetting('site_address', 'عدن - الجمهورية اليم
 <footer class="footer">
     <div class="footer-grid">
         <div class="footer-brand">
-            <h3><img src="images/logo.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle; margin-left: 10px;"> <?php echo htmlspecialchars($site_name); ?></h3>
+            <h3><img src="logo.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle; margin-left: 10px;"> <?php echo htmlspecialchars($site_name); ?></h3>
             <p>جمعية خيرية تنموية تأسست بهدف خدمة المجتمع وتنميته من خلال برامج وأنشطة نوعية تلامس احتياجات الأسر المحتاجة والأيتام والنساء والشباب في عدن.</p>
         </div>
         <div>
