@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body class="login-page">
     <div class="login-box">
-        <img src="images/logo.jpg" alt="شعار جمعية السعدي" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; display: block; border: 3px solid var(--secondary);">
+        <img src="logo.jpg" alt="شعار جمعية السعدي" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; display: block; border: 3px solid var(--secondary);">
         <h2>لوحة الإدارة</h2>
         <p>تسجيل دخول المدير فقط</p>
 
